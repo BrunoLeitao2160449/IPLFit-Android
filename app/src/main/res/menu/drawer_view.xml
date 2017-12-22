@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_plan"
+            android:icon="@drawable/ic_chart"
+            android:title="Plano" />
+        <item
+            android:id="@+id/nav_myfood"
+            android:icon="@drawable/ic_apple"
+            android:title="Meus Alimentos" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_profile"
+            android:title="Perfil" />
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_lamp"
+            android:title="Dicas" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_settings"
+            android:title="Definições" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_about"
+            android:title="Sobre" />
+        <item
+            android:id="@+id/nav_quit"
+            android:icon="@drawable/ic_quit"
+            android:title="Sair" />
+    </group>
+</menu>

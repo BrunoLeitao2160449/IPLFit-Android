@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.support.android.iplfit">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.DesignDemo">
+        <activity android:name=".Activities.LogInActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activities.MainActivity" />
+        <activity
+            android:name=".Activities.DiaDetalhesActivity"
+            android:parentActivityName=".Activities.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.support.android.iplfit.Activities.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Activities.PerfilActivity"
+            android:parentActivityName=".Activities.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.support.android.iplfit.Activities.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Activities.MeusAlimentosActivity"
+            android:parentActivityName=".Activities.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.support.android.iplfit.Activities.MainActivity" />
+        </activity>
+        <activity android:name=".Activities.DefinicoesActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.support.android.iplfit.Activities.MainActivity" />
+        </activity>
+        <activity android:name=".Activities.SobreActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.support.android.iplfit.Activities.MainActivity" />
+        </activity>
+        <activity android:name=".Activities.RegistoActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.support.android.iplfit.Activities.MainActivity" />
+        </activity>
+        <activity android:name=".Activities.RecuperarPasswordActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.support.android.iplfit.Activities.MainActivity" />
+        </activity>
+        <activity android:name=".Activities.DicasActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.support.android.iplfit.Activities.MainActivity" />
+        </activity>
+        <activity android:name=".Dicasfragment"></activity>
+        <service android:name="org.eclipse.paho.android.service.MqttService" >
+        </service>
+    </application>
+
+</manifest>
